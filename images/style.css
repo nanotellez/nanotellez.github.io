@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    overflow-y: auto;
+    padding-top: 65px; /* padding for fixed navbar */
+}
+
+/* optional style active link */
+.navbar-light .navbar-nav .nav-link.active {
+    background-color: magenta;
+}
+
+
+/* hidden spacer before sections for proper offset */
+main h3:before {
+    height: 65px;
+    content: "";
+    display:block;
+}

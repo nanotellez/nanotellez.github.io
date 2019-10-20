@@ -1,14 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- some cool icons from fontawesome.com -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <title>Nano Tellez</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            position: relative;
+            overflow-y: auto;
+            padding-top: 65px;
+            /* padding for fixed navbar */
+        }
+
+        /* optional style active link */
+        .navbar-light .navbar-nav .nav-link.active {
+            background-color: magenta;
+        }
+
+        .container {
+            margin: auto;
+            /* padding: 200px 0; */
+            width: 70%;
+        }
+
+        /* hidden spacer before sections for proper offset */
+        main h3:before {
+            height: 85px;
+            content: "";
+            display: block;
+        }
+    </style>
 </head>
-<body>
-    <h1>This is going to be a kick-ass portfolio page!</h1>
+
+<body data-spy="scroll" data-target="#navigation" data-offset="70"></body>>
+<!-- ************ NAVBAR! ************* -->
+
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand py-3" href="#">Hernando "Nano" Tellez, Ph.D.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+            <!-- <ul class="nav navbar-nav"> 
+                <a class="nav-link p-3" href="#sec1">One</a>
+                <a class="nav-link p-3" href="#sec2">Two</a>
+                <a class="nav-link p-3" href="#sec3">Three</a>
+            </ul>-->
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Projects</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#UTM">Used Textbook Marketplace</a>
+                        <a class="dropdown-item" href="#rating">Project Rating Aggregator</a>
+                        <a class="dropdown-item" href="#jrpg">JRPG</a>
+                        <a class="dropdown-item" href="#biblioteca">Biblioteca Tellez</a>
+                    </div>
+                </li>
+                <li class="nav-link" data-toggle="modal" data-target="#contact">Contact Me</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="container">
+    <div id="about" class="col-12">
+        <h3>About Me</h3>
+        <img id="img-me" src="" alt="place holder for image of me">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab inventore sed nihil, similique porro
+            molestias ut repellendus sequi esse repudiandae voluptas magni id possimus fugit qui rem aspernatur
+            adipisci maxime?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab inventore sed nihil, similique porro
+            molestias ut repellendus sequi esse repudiandae voluptas magni id possimus fugit qui rem aspernatur
+            adipisci maxime?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab inventore sed nihil, similique porro
+            molestias ut repellendus sequi esse repudiandae voluptas magni id possimus fugit qui rem aspernatur
+            adipisci maxime?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab inventore sed nihil, similique porro
+            molestias ut repellendus sequi esse repudiandae voluptas magni id possimus fugit qui rem aspernatur
+            adipisci maxime?</p>
+    </div>
+    <div id="UTM" class="col-12">
+        <h3>Used Textbook Marketplace</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+    </div>
+    <div id="rating" class="col-12">
+        <h3>Project Ratings Aggregator</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+    </div>
+    <div id="jrpg" class="col-12">
+        <h3>JRPG</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+    </div>
+    <div id="biblioteca" class="col-12">
+        <h3>La Biblioteca de Hernando Tellez</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus deserunt error hic
+            officiis natus! Dolor facilis sunt doloremque eaque dolorem! Consequatur voluptatibus praesentium
+            voluptatem nobis maiores provident rerum amet!</p>
+    </div>
+
+
+</main>
+
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="ModalLabel">Get In Touch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <p>email</p>
+                <p>LinkedIn</p>
+                <p>GitHub</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
